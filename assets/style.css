@@ -1,0 +1,65 @@
+:root {
+  --gray: #5f6366;
+  --uclablue: #4d6d9a;
+  --simplyposh: #86b3d1;
+  --cyan: #99ced3;
+  --cameopink: #edb5bf;
+  --lightblue: #edf7ff;
+}
+.navbar {
+  background: var(--lightblue);
+}
+
+li.nav-item .nav-link,
+nav.navbar .navbar-brand {
+  color: var(--gray);
+  cursor: pointer;
+}
+
+li.nav-item .nav-link {
+  margin-right: 1em !important;
+}
+
+#myHeader {
+  background-image: url('../images/bench-smaller.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+li.nav-item .nav-link:hover {
+  background: #f4f4f4;
+  color: #f97300;
+}
+
+#navbarSupportedContent {
+  justify-content: flex-end;
+}
+
+nav.navbar .navbar-toggler {
+  background: #fff !important;
+}
+
+div.overlay {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(244, 244, 244, 0.79);
+}
+.description {
+  position: absolute;
+  top: 30%;
+  margin: auto;
+  padding: 2em;
+}
+
+.description h1 {
+  color: var(--uclablue);
+}
+.description p {
+  color: #666;
+  font-size: 20px;
+
+  line-height: 1.5;
+}
