@@ -1,70 +1,830 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/style.css" />
+    <meta charset="utf-8" />
+
+    <!--====== Title ======-->
+    <title>if(Mike)&#8594;CODE</title>
+
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--====== Favicon Icon ======-->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/png" />
+
+    <!--====== Animate CSS ======-->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--====== Glide CSS ======-->
+    <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+
+    <!--====== Line Icons CSS ======-->
+    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
+
+    <!--====== Bootstrap CSS ======-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <title>ifMike&#8594;code</title>
+      crossorigin="anonymous" />
+
+    <!--====== Default CSS ======-->
+    <link rel="stylesheet" href="assets/css/default.css" />
+
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/25eac191ac.js"
+      crossorigin="anonymous"></script>
   </head>
+
   <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-md fixed-top">
-      <a href="#" class="navbar-brand px-3">Nurse.Codes</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-4">
-          <li class="nav-item">
-            <a class="nav-link" data-value="about" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-value="portfolio" href="#">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-value="blog" href="#">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-value="team" href="#"> Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-value="contact" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <header class="header" id="myHeader">
-      <div class="overlay">
-        <div class="container">
-          <div class="description">
-            <h1>Welcome</h1>
-            <p>Custom solutions for complex problems</p>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader">
+      <div class="loader">
+        <div class="ytp-spinner">
+          <div class="ytp-spinner-container">
+            <div class="ytp-spinner-rotator">
+              <div class="ytp-spinner-left">
+                <div class="ytp-spinner-circle"></div>
+              </div>
+              <div class="ytp-spinner-right">
+                <div class="ytp-spinner-circle"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </header>
+    </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!--====== PRELOADER PART ENDS ======-->
+
+    <!--====== HEADER PART START ======-->
+
+    <section id="home" class="header_area">
+      <div id="header_navbar" class="header_navbar">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html">
+                  <img id="logo" src="assets/images/logo.svg" alt="Logo" />
+                </a>
+                <button
+                  class="navbar-toggler collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="toggler-icon"></span>
+                  <span class="toggler-icon"></span>
+                  <span class="toggler-icon"></span>
+                </button>
+
+                <div
+                  class="collapse navbar-collapse sub-menu-bar"
+                  id="navbarSupportedContent">
+                  <ul id="nav" class="navbar-nav ms-auto">
+                    <!-- <li class="nav-item">
+                      <a class="page-scroll active" href="#home">Home</a>
+                    </li> -->
+                    <li class="nav-item">
+                      <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="page-scroll" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="page-scroll" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="page-scroll" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- navbar collapse -->
+              </nav>
+              <!-- navbar -->
+            </div>
+          </div>
+          <!-- row -->
+        </div>
+        <!-- container -->
+      </div>
+      <!-- header navbar -->
+
+      <div class="header_hero">
+        <div
+          class="single_hero bg_cover d-flex align-items-center"
+          style="background-image: url(assets/images/hero-1.jpg)">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8 col-md-10">
+                <div class="hero_content text-center">
+                  <h2
+                    class="hero_title wow fadeInUp"
+                    data-wow-duration="1.3s"
+                    data-wow-delay="0.2s">
+                    {RN}
+                    <!-- <br /> -->
+                  </h2>
+                  <p
+                    class="wow fadeInUp"
+                    data-wow-duration="1.3s"
+                    data-wow-delay="0.5s">
+                    something about connection of caring and computing
+                  </p>
+                  <a
+                    href="#features"
+                    class="main-btn wow fadeInUp"
+                    data-wow-duration="1.3s"
+                    data-wow-delay="0.8s"
+                    >Explore</a
+                  >
+                </div>
+                <!-- hero content -->
+              </div>
+            </div>
+            <!-- row -->
+          </div>
+          <!-- container -->
+        </div>
+        <!-- single hero -->
+      </div>
+      <!-- header hero -->
+    </section>
+
+    <!--====== HEADER PART ENDS ======-->
+
+    <!--====== FEATURES PART START ======-->
+
+    <section id="features" class="features_area pt-120">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="section_title text-center pb-25">
+              <h4
+                class="title wow fadeInUp"
+                data-wow-duration="1.3s"
+                data-wow-delay="0.2s">
+                What makes me different
+              </h4>
+              <p
+                class="wow fadeInUp"
+                data-wow-duration="1.3s"
+                data-wow-delay="0.4s">
+                My unique combination of knowledge and experience helps me
+                identify <em>and develop</em> solutions to complex problems.
+              </p>
+            </div>
+            <!-- section title -->
+          </div>
+        </div>
+        <!-- row -->
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-7">
+            <div
+              class="single_features text-center mt-30 wow fadeInUp"
+              data-wow-duration="1.3s"
+              data-wow-delay="0.2s">
+              <i class="fa-solid fa-user-doctor"></i>
+
+              <h4 class="features_title">Registered Nurse</h4>
+              <p>17+ years caring for patients and their families.</p>
+            </div>
+            <!-- single features -->
+          </div>
+          <div class="col-lg-4 col-md-7">
+            <div
+              class="single_features text-center mt-30 wow fadeInUp"
+              data-wow-duration="1.3s"
+              data-wow-delay="0.4s">
+              <i class="fa-solid fa-code"></i>
+              <h4 class="features_title">Software Engineer*(pending)</h4>
+              <p>notes about Flatiron</p>
+            </div>
+            <!-- single features -->
+          </div>
+          <div class="col-lg-4 col-md-7">
+            <div
+              class="single_features text-center mt-30 wow fadeInUp"
+              data-wow-duration="1.3s"
+              data-wow-delay="0.6s">
+              <i class="fa-solid fa-list-check"></i>
+              <h4 class="features_title">
+                Project Manager (or business experience?)
+              </h4>
+              <p>Describe here</p>
+            </div>
+            <!-- single features -->
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </section>
+
+    <!--====== FEATURES PART ENDS ======-->
+
+    <!--====== ABOUT PART START ======-->
+
+    <section id="about" class="pt-130">
+      <div class="about_area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="about_content pt-120 pb-130">
+                <div class="section_title pb">
+                  <h4
+                    class="title wow fadeInUp"
+                    data-wow-duration="1.3s"
+                    data-wow-delay="0.2s">
+                    Basics
+                  </h4>
+                  <p
+                    class="wow fadeInUp"
+                    data-wow-duration="1.3s"
+                    data-wow-delay="0.4s">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    dianonumy eirmod tempor invidunt ut labore et dolore magna
+                    aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                    justo duo dolores et erebum
+                  </p>
+                  <p
+                    class="wow fadeInUp"
+                    data-wow-duration="1.3s"
+                    data-wow-delay="0.6s">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore etdolore maali
+                    quyam erat, sed diam voluptua. At vero eos et accusam et
+                    justo duo dolores
+                  </p>
+                </div>
+                <!-- section title -->
+                <a
+                  href="#0"
+                  class="main-btn wow fadeInUp"
+                  data-wow-duration="1.3s"
+                  data-wow-delay="0.7s"
+                  >Learn More</a
+                >
+              </div>
+              <!-- about content -->
+            </div>
+          </div>
+          <!-- row -->
+        </div>
+        <!-- container -->
+
+        <div
+          class="about_image bg_cover wow fadeInLeft"
+          data-wow-duration="1.3s"
+          data-wow-delay="0.2s"
+          style="background-image: url(./assets/images/about-me.jpg)">
+          <div class="image_content">
+            <h4 class="experience"><span>Not</span><br />actually me</h4>
+          </div>
+        </div>
+        <!-- about image -->
+      </div>
+    </section>
+
+    <!--====== ABOUT PART ENDS ======-->
+
+    <!--====== FEATURES PART START ======-->
+
+    <section id="resume" class="features_area pt-120">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="section_title text-center pb-25">
+              <h4
+                class="title wow fadeInUp"
+                data-wow-duration="1.3s"
+                data-wow-delay="0.2s">
+                Resume will go here
+              </h4>
+              <p
+                class="wow fadeInUp"
+                data-wow-duration="1.3s"
+                data-wow-delay="0.4s">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt labor dolore.
+              </p>
+            </div>
+            <!-- section title -->
+          </div>
+        </div>
+        <!-- row removed and put in old_html id=2-->
+
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </section>
+    <!--====== SKILLS SECTION =======-->
+    <section id="skills" class="skills section-bg">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+        <div class="section_title text-center pb-25">
+          <h2>Skills</h2>
+          <p>
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+            fugiat sit in iste officiis commodi quidem hic quas.
+          </p>
+        </div>
+
+        <!-- <div class="row skills-content">
+          <div class="col-lg-6">
+            <div class="progress">
+              <span class="skill">HTML <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 100%"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="90"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 90%"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="progress">
+              <span class="skill">PHP <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="80"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 80%"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">WordPress/CMS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="90"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 90%"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Photoshop <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="55"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 55%"></div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    <!--====== SKILLS SECTION =======-->
+    <!--====== FEATURES PART ENDS ======-->
+
+    <!--====== PORTFOLIO PART START ======-->
+
+    <section id="portfolio" class="portfolio_area pt-120">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="section_title text-center pb-60">
+              <h4
+                class="title wow fadeInUp"
+                data-wow-duration="1.3s"
+                data-wow-delay="0.2s">
+                My Portfolio
+              </h4>
+              <p
+                class="wow fadeInUp"
+                data-wow-duration="1.3s"
+                data-wow-delay="0.4s">
+                Projects here
+              </p>
+            </div>
+            <!-- section title -->
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container removed id:3 -->
+
+      <!-- row -->
+    </section>
+
+    <!--====== PORTFOLIO PART ENDS ======-->
+
+    <!--====== PRICING PART START ======-->
+
+    <!--====== PRICING PART ENDS ======-->
+
+    <!--====== TEAM PART START ======-->
+
+    <!--====== TEAM PART ENDS ======-->
+
+    <!--====== TESTIMONIAL PART START ======-->
+
+    <section
+      id="testimonial"
+      class="testimonial_area pt-130 pb-130 bg_cover"
+      style="background-image: url(assets/images/testimonial.jpg)">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="testimonial_active_wrapper">
+              <div class="testimonial_active">
+                <div class="single_testimonial text-center">
+                  <img src="assets/images/author-1.jpg" alt="author" />
+                  <h5 class="author_name">Isabela Moreira</h5>
+                  <span>UX Specialist, Yoast</span>
+                  <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                    aliquyam erat, sed diam voluptua. At vero eos accusam et
+                    justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                  </p>
+                </div>
+                <div class="single_testimonial text-center">
+                  <img src="assets/images/author-2.jpg" alt="author" />
+                  <h5 class="author_name">Fiona Smith</h5>
+                  <span>Sr. Software Engineer</span>
+                  <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                    aliquyam erat, sed diam voluptua. At vero eos accusam et
+                    justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                  </p>
+                </div>
+                <div class="single_testimonial text-center">
+                  <img src="assets/images/author-3.jpg" alt="author" />
+                  <h5 class="author_name">Elon Musk</h5>
+                  <span>Creaitve Businessman</span>
+                  <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                    aliquyam erat, sed diam voluptua. At vero eos accusam et
+                    justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </section>
+
+    <!--====== TESTIMONIAL PART ENDS ======-->
+
+    <!--====== BLOG PART START ======-->
+
+    <section id="blog" class="blog_area pt-120 pb-130">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="section_title text-center pb-25">
+              <h4
+                class="title wow fadeInUp"
+                data-wow-duration="1.3s"
+                data-wow-delay="0.2s">
+                Recent Blog
+              </h4>
+              <p
+                class="wow fadeInUp"
+                data-wow-duration="1.3s"
+                data-wow-delay="0.4s">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt labor dolore.
+              </p>
+            </div>
+            <!-- section title -->
+          </div>
+        </div>
+        <!-- row -->
+        <div class="row">
+          <div class="col-lg-6">
+            <div
+              class="single_blog mt-30 wow fadeInUp"
+              data-wow-duration="1.3s"
+              data-wow-delay="0.2s">
+              <div class="blog_image">
+                <img src="assets/images/blog-1.jpg" alt="blog" />
+              </div>
+              <div class="blog_content">
+                <h3 class="blog_title">
+                  <a href="#0"
+                    >Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                    sed diam nonumy eirmod tempor .</a
+                  >
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt labor dolore.Lorem ipsum
+                  dolor sit amet, conse sadipscing elitr, sed diam nonumy eirmod
+                  tempor invidunt labor dolore magna .Lorem ipsum dolor sit
+                  amet, consetetur sadipscing elit.
+                </p>
+              </div>
+            </div>
+            <!-- single blog -->
+          </div>
+          <div class="col-lg-6">
+            <div
+              class="single_blog blog_2 d-sm-flex mt-30 wow fadeInUp"
+              data-wow-duration="1.3s"
+              data-wow-delay="0.2s">
+              <div class="blog_image">
+                <img src="assets/images/blog-2.jpg" alt="blog" />
+              </div>
+              <div class="blog_content media-body">
+                <h3 class="blog_title">
+                  <a href="#0"
+                    >Lorem ipsum dolor sit amet, consetetur sadipscing .</a
+                  >
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit consetetur sadipscing elitr, sed diam.
+                </p>
+                <a href="#0" class="more">Read More</a>
+              </div>
+            </div>
+            <!-- single blog -->
+
+            <div
+              class="single_blog blog_2 d-sm-flex mt-30 wow fadeInUp"
+              data-wow-duration="1.3s"
+              data-wow-delay="0.3s">
+              <div class="blog_image">
+                <img src="assets/images/blog-3.jpg" alt="blog" />
+              </div>
+              <div class="blog_content media-body">
+                <h3 class="blog_title">
+                  <a href="#0"
+                    >Lorem ipsum dolor sit amet, consetetur sadipscing .</a
+                  >
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit consetetur sadipscing elitr, sed diam.
+                </p>
+                <a href="#0" class="more">Read More</a>
+              </div>
+            </div>
+            <!-- single blog -->
+
+            <div
+              class="single_blog blog_2 d-sm-flex mt-30 wow fadeInUp"
+              data-wow-duration="1.3s"
+              data-wow-delay="0.4s">
+              <div class="blog_image">
+                <img src="assets/images/blog-4.jpg" alt="blog" />
+              </div>
+              <div class="blog_content media-body">
+                <h3 class="blog_title">
+                  <a href="#0"
+                    >Lorem ipsum dolor sit amet, consetetur sadipscing .</a
+                  >
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit consetetur sadipscing elitr, sed diam.
+                </p>
+                <a href="#0" class="more">Read More</a>
+              </div>
+            </div>
+            <!-- single blog -->
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </section>
+
+    <!--====== BLOG PART ENDS ======-->
+
+    <!--====== CONTACT PART START ======-->
+
+    <section
+      id="contact"
+      class="contact_area bg_cover pt-120 pb-130"
+      style="background-image: url(assets/images/contact_bg.jpg)">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="section_title section_title_2 text-center pb-25">
+              <h4
+                class="title wow fadeInUp"
+                data-wow-duration="1.3s"
+                data-wow-delay="0.2s">
+                Contact Us
+              </h4>
+              <p
+                class="wow fadeInUp"
+                data-wow-duration="1.3s"
+                data-wow-delay="0.4s">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt labor dolore.
+              </p>
+            </div>
+            <!-- section title -->
+          </div>
+        </div>
+        <!-- row -->
+
+        <form
+          id="contact-form"
+          action="assets/contact.php"
+          method="post"
+          class="wow fadeInUp"
+          data-wow-duration="1.3s"
+          data-wow-delay="0.4s">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="single_form">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  name="name"
+                  id="name"
+                  required />
+              </div>
+              <!-- single form -->
+            </div>
+            <div class="col-lg-6">
+              <div class="single_form">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  name="email"
+                  id="email"
+                  required />
+              </div>
+              <!-- single form -->
+            </div>
+            <div class="col-lg-6">
+              <div class="single_form">
+                <input
+                  type="text"
+                  placeholder="Phone Number"
+                  name="number"
+                  id="number"
+                  required />
+              </div>
+              <!-- single form -->
+            </div>
+            <div class="col-lg-6">
+              <div class="single_form">
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  name="subject"
+                  id="subject"
+                  required />
+              </div>
+              <!-- single form -->
+            </div>
+            <div class="col-lg-12">
+              <div class="single_form">
+                <textarea
+                  placeholder="Message"
+                  name="message"
+                  id="message"
+                  required></textarea>
+              </div>
+              <!-- single form -->
+            </div>
+
+            <p class="form-message"></p>
+
+            <div class="col-lg-12">
+              <div class="single_form text-center">
+                <button class="main-btn" type="submit">SUBMIT</button>
+              </div>
+              <!-- single form -->
+            </div>
+          </div>
+          <!-- row -->
+        </form>
+      </div>
+      <!-- container -->
+    </section>
+
+    <!--====== CONTACT PART ENDS ======-->
+
+    <!--====== FOOTER PART START ======-->
+
+    <footer id="footer" class="footer_area">
+      <div class="container">
+        <div
+          class="footer_wrapper text-center d-lg-flex align-items-center justify-content-between">
+          <p class="credit">
+            Designed and Developed by
+            <a href="https://uideck.com" rel="nofollow">UIdeck</a>
+          </p>
+          <div class="footer_social pt-15">
+            <ul>
+              <li>
+                <a href="#0"><i class="lni lni-facebook-original"></i></a>
+              </li>
+              <li>
+                <a href="#0"><i class="lni lni-twitter-original"></i></a>
+              </li>
+              <li>
+                <a href="#0"><i class="lni lni-instagram-original"></i></a>
+              </li>
+              <li>
+                <a href="#0"><i class="lni lni-linkedin-original"></i></a>
+              </li>
+            </ul>
+          </div>
+          <!-- footer social -->
+        </div>
+        <!-- footer wrapper -->
+      </div>
+      <!-- container -->
+    </footer>
+
+    <!--====== FOOTER PART ENDS ======-->
+
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->
+
+    <!--====== Bootstrap js ======-->
+    <!-- <script src="assets/js/bootstrap.bundle-5.0.0-beta1.min.js"></script> -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./assets/script.js"></script>
+      crossorigin="anonymous"></script>
+    <!--====== glide js ======-->
+    <script src="assets/js/tiny-slider.js"></script>
+
+    <!--====== wow js ======-->
+    <script src="assets/js/wow.min.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
